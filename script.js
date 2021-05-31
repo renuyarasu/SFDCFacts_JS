@@ -1,19 +1,12 @@
-// JavaScript: Declaring and Defining Variables
+// JavaScript: Data Types
 
-// var, let, const
-/**
-for (var i = 0; i < 10; i++) {
-    console.log(i); 
-}
- */
-/**
-for (let i = 0; i < 10; i++) { 
-    console.log(i); 
-}
- */
-const constValue = 10;
-constValue = 20;
-console.log(constValue); //10
-console.log(constValue); 
-//Uncaught TypeError: Assignment to constant variable [20].
+// String • Number • BigInt • Boolean • undefined • null • Symbol • Object
+// https://www.programiz.com/javascript/data-types
 
+const student = "VedaGna";
+const studentRollNum = 3555;
+const studentIsPresent = true;
+const studentFee = null;
+const studentAge = undefined;
+
+console.log(typeof student);
