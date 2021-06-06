@@ -4,6 +4,7 @@
 // String • Number • BigInt • Boolean • undefined • null • Symbol • Object
 // https://www.programiz.com/javascript/data-types
 
+<<<<<<< HEAD
 let str = 'Lorem ipsum dolor sit amet consectetur adipisicing elit sit';
 
 /* 
@@ -56,3 +57,11 @@ let result = str.substr(0, 20) //Lorem ipsum dolor si
 let result = str.substring(0, 11); // Lorem ipsum
 */
 console.log(result);
+=======
+const greeting = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, necessitatibus";
+const result = greeting.substring(0, 5);
+
+// console.log(result.toUpperCase());
+console.log(greeting.split(' ').length);
+// Split method splits the string the return an array of world
+>>>>>>> 4a96e346fab9c16539672a50260343522299408b
