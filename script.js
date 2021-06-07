@@ -1,8 +1,8 @@
-// JavaScript: Data Types - Objects JSON.stringify
+// JavaScript: Data Types - Objects Template Literals
 console.clear();
 
 const employee = {
-  name: "Employee01",
+  name: "Anji Kota",
   id: 5,
   inOffice: true,
   leaveDates: [5, 6, 7],
@@ -17,7 +17,7 @@ const employee = {
 const employees = [
   employee,
   {
-    name: "Employee02",
+    name: "Renuka Prasad",
     id: 15,
     inOffice: false,
     leaveDates: [30, 31],
@@ -31,3 +31,6 @@ const employees = [
 ];
 
 console.log("Employees: " + JSON.stringify(employees));
+
+// String Concatenation and Template Literals
+console.log(`My Name is ${employee.name} and my ID ${employee.id}`);
