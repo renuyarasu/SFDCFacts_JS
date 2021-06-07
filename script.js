@@ -1,10 +1,10 @@
-// JavaScript: Data Types - Objects Notations
+// JavaScript: Data Types - Objects delete operator
 
 const employee = {
-  name: "employee_01",
+  name: "Employee",
   id: 5,
   inOffice: true,
 };
-console.log(employee.name); //dot notation
-console.log(employee['name']); //bracket notation
-console.log(employee.name); //dot notation
+
+delete employee.inOffice; // delete operator
+console.log(employee);
