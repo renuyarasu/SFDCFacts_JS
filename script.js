@@ -13,9 +13,16 @@ function greet() {
 greet();
  */
 
-// 2. Function Expression
+/* // 2. Function Expression
 
 const greet = function () {
+  console.log("Bonjour Monsieur!");
+};
+greet(); */
+
+// 3. Arrow Function
+
+const greet = () => {
   console.log("Bonjour Monsieur!");
 };
 greet();
