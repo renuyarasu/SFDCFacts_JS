@@ -1,58 +1,33 @@
-// JavaScript: Data Types - String
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+// JavaScript: Data Types - Array
 
-// String • Number • BigInt • Boolean • undefined • null • Symbol • Object
-// https://www.programiz.com/javascript/data-types
+const numbers = [1, 5, 8, 9, 4, 5, 6, 2, 3];
+/* numbers.push(5); // The push() method adds one or more elements to the end of an array and returns the new length of the array.
+console.log(numbers);
 
-let str = 'Lorem ipsum dolor sit amet consectetur adipisicing elit sit';
+numbers.pop(5); // The pop() method removes the last element from an array and returns that element. This method changes the length of the array.
+console.log(numbers);
 
-/* 
-// length
-let result = str.length;
+// numbers[2] = 300
+// console.log(numbers);
 
-// toUpperCase
-let result = str.toUpperCase();
+numbers.slice(0, 3); 
+// The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+console.log(numbers);
+console.log(numbers.slice(2)); // expected output: Array [2, 3, 4, 6, 7, 8, 9]
+console.log(numbers.slice(2, 4)); // expected output: Array [2, 3]
+console.log(numbers.slice(0, 5)); // expected output: Array [ 0, 1, 2, 3, 4 ]
 
-// toLowerCase
-let result = str.toLowerCase();
- 
-// includes - serach word in string - case-sensitive 
-let result = str.includes('sit') //true
-let result = str.includes('Sit') //flase
 
-// startsWith - must having 4 letters from string
-let result = str.startsWith('Lore') //true
+numbers.unshift(100); 
+// The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+console.log(numbers);
 
-// endWith
-let result = str.endsWith('elit') // true
+numbers.sort();
+// The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
 
-// search
-let result = str.search('sit') //18
-
-// indexOf
-let result = str.indexOf('sit') //18
-
-// lastIndexOf
-let result = str.lastIndexOf('sit') //56
-
-// replace - replace working in string
-let result = str.replace('sit', 'stand')
-
-// concat
-let str2 = ' Hello World';
-let result = str + str2
-//Lorem ipsum dolor sit amet consectetur adipisicing elit sit Hello World
-
-// split - divide word with ','
-let result = str.split('renu'); //Lorem ipsum
-
-// slice
-let result = str.slice(0, 11) //Lorem ipsu
-
-// substr
-let result = str.substr(0, 20) //Lorem ipsum dolor si
-
-// substring
-let result = str.substring(0, 11); // Lorem ipsum
+console.log(numbers);
 */
-console.log(result);
+numbers.sort(function(a, b) {
+  return a - b;
+});
+console.log(numbers);
