@@ -1,10 +1,10 @@
-// JavaScript: Data Types - Objects.entries/keys/values
+// JavaScript: Data Types - Objects Notations
 
 const employee = {
   name: "employee_01",
   id: 5,
   inOffice: true,
 };
-console.log(Object.entries(employee));
-console.log(Object.keys(employee));
-console.log(Object.values(employee));
+console.log(employee.name); //dot notation
+console.log(employee['name']); //bracket notation
+console.log(employee.name); //dot notation
