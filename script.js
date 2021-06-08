@@ -1,32 +1,19 @@
-// JavaScript: Data Types - Comparison Operators
+// JavaScript: Data Types - Arithmetic Operators
 // Arithmetic Operators || Assignment Operators || Comparison Operators || Logical Operators || Conditional Operators
 
-//Comparison Operators
+//Arithmetic Operators
 
-const x = 10;
-const y = '10';
+const x = 12;
+const y = 10;
 
-//equals operator
-console.log(x == y); // true
+// Modulus (Remainder) operator
+// console.log(x  % y); //2
 
-//strict equals operator
-console.log(x === y); // false
+// Increment operator ++
 
-//not equals operator
-console.log(x != y); // false
+console.log(x++);
+console.log(++x);
+// Decrement operator --
 
-//strict not equals operator
-console.log(x !== y); // true
-
-//greater then operator
-console.log(x > y); // false
-
-//less then operator
-console.log(x < y); // false
-
-//greater then and equals to operator
-console.log(x >= y); // true
-
-//less then and equals to operator
-console.log(x <= y); // true
-
+console.log(x--);
+console.log(--x);
