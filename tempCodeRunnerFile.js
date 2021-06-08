@@ -1,4 +1,8 @@
 let x = 10;
-let y = 20;
-let z = x+y;
-console.log(z);
+x = x + 10; // 20
+x += 10; // x = x + 10; 20
+x -= 10; // x = x - 10; 0
+x *= 10; // x = x * 10; 100
+x /= 10; // x = x / 10; 1
+console.log(x);
+ 
