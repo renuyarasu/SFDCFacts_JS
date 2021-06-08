@@ -1,19 +1,13 @@
-// JavaScript: Data Types - Arithmetic Operators
-// Arithmetic Operators || Assignment Operators || Comparison Operators || Logical Operators || Conditional Operators
+// JavaScript: Conditional Statements 
+    // If Else
 
-//Arithmetic Operators
+    const x = 19;
+    const y = 10;
 
-const x = 12;
-const y = 10;
-
-// Modulus (Remainder) operator
-// console.log(x  % y); //2
-
-// Increment operator ++
-
-console.log(x++);
-console.log(++x);
-// Decrement operator --
-
-console.log(x--);
-console.log(--x);
+    if (x > y) {
+        console.log('X is bigger');
+    } else if(x<y){
+        console.log('Y is bigger');
+    } else{
+        console.log('Both are equal');
+    }
