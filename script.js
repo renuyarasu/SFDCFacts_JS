@@ -1,28 +1,38 @@
-// JavaScript: Data Types - Functions
-
-/* 
-Three Ways to Define Functions in JavaScript
-  1. Function Declaration
-  2. Function Expression
-  3. Generator Function */
-
-/* // 1. Function Declaration
-function greet() {
-  console.log("Bonjour Monsieur!");
-}
-greet();
+// JavaScript: Data Types - Operator
+/*  Arithmetic Operators.
+    Assignment Operators.
+    Comparison Operators.
+    Logical Operators.
+    Conditional Operators.
+ */
+console.clear();
+// Assignment Operators
+/* let x = 10;
+x = 20;
  */
 
-/* // 2. Function Expression
 
-const greet = function () {
-  console.log("Bonjour Monsieur!");
-};
-greet(); */
+// Addition Operator
+/* let x = 10;
+let y = 20;
+let z = x+y;
+console.log(z);
+ */
 
-// 3. Arrow Function
+// Subtraction Operator
+/* let x = 100;
+let y = 20;
+let z = x-y;
+console.log(z);
+ */
+// Multiplication Operator
+/* let x = 10;
+let y = 20;
+let z = x*y;
+console.log(z); */
 
-const greet = () => {
-  console.log("Bonjour Monsieur!");
-};
-greet();
+// Division Operator
+let x = 10;
+let y = 20;
+let z = x/y;
+console.log(z);
