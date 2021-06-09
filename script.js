@@ -1,14 +1,23 @@
-// JavaScript: 4 ways to convert a string into an array in javaScript!
-const str = "VEDAGNA";
+// JavaScript: For loop 3 different ways
 
 // #1
-console.log(str.split(""));
+for (let i = 1; i < 5; i++) {
+  console.log(i);
+}
 
 // #2
-console.log([...str]);
+const numbers = [1, 2, 3, 4, 5];
+for (let element of numbers) {
+  console.log(element);
+}
 
 // #3
-console.log(Array.from(str));
+const person = {
+  name: "VedaGna",
+  role: "Play",
+};
 
 // #4
-console.log(Object.assign([], str));
+for (let key in person) {
+  console.log(key);
+}
