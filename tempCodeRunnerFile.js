@@ -1,1 +1,2 @@
-9
+rom(str));
+console.log(Object.
