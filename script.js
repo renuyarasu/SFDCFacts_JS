@@ -1,23 +1,27 @@
-// JavaScript: For loop 3 different ways
+// JavaScript: Conditional Statement - Switch Case
 
-// #1
-for (let i = 1; i < 5; i++) {
-  console.log(i);
-}
-
-// #2
-const numbers = [1, 2, 3, 4, 5];
-for (let element of numbers) {
-  console.log(element);
-}
-
-// #3
-const person = {
-  name: "VedaGna",
-  role: "Play",
-};
-
-// #4
-for (let key in person) {
-  console.log(key);
+const dayOfWeek = 5;
+switch (dayOfWeek) {
+  case 1:
+    console.log("Mon");
+    break;
+  case 2:
+    console.log("Tue");
+    break;
+  case 3:
+    console.log("Wed");
+    break;
+  case 4:
+    console.log("Thr");
+    break;
+  case 5:
+    console.log("Fri");
+    break;
+  case 6:
+    console.log("Sat");
+    break;
+  case 7:
+    console.log("Sun");
+  default:
+    break;
 }
