@@ -1,27 +1,19 @@
-// JavaScript: Conditional Statement - Switch Case
+// JavaScript: Conditional Statement - Switch Case - WorkDay/WeekEnd
 
-const dayOfWeek = 5;
+const dayOfWeek = 8;
 switch (dayOfWeek) {
   case 1:
-    console.log("Mon");
-    break;
   case 2:
-    console.log("Tue");
-    break;
   case 3:
-    console.log("Wed");
-    break;
   case 4:
-    console.log("Thr");
-    break;
   case 5:
-    console.log("Fri");
+    console.log("Workday");
     break;
   case 6:
-    console.log("Sat");
-    break;
   case 7:
-    console.log("Sun");
+    console.log("Weekend");
+    break;
   default:
+    console.log("invalid");
     break;
 }
