@@ -1,9 +1,7 @@
-// JavaScript: Loops
+// JavaScript: Loops - For Loop
 
-// For Loop
-const family = ["Chinnu", "Gnapika", "Veda", "Renu", "Yarasu"];
-for (let x = 0; x < family.length; x++) {
-  if (x === 2) continue;
-  console.log(family[x]);
-  //   if (x === 3) break; //break statement
+// of keyword using Arry
+const names = ["Chinnu", "Gnapika", "Veda", "Renu", "Yarasu"];
+for (let name of names) {
+  console.log(name);
 }
