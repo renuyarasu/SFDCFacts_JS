@@ -34,9 +34,15 @@ const students = [
   },
 ];
 
-const newArray = students.map(function (student) {
+/* const newArray = students.map(function (student) {
   // return student.name; //All names if students
   // return student.name[0]; // name: first lettes
   // return student.name[0].toLowerCase(); name: first lettes in toLowerCase
-});
+}); */
+
+const newArray = students
+  .filter((student) => {
+    return student.isPresent === false;
+  })
+  .map((student) => student.name);
 console.log(newArray);
