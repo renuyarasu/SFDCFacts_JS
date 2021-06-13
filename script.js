@@ -1,19 +1,20 @@
-// JavaScript: Conditional Statement - Switch Case - WorkDay/WeekEnd
+// JavaScript: Loops
 
-const dayOfWeek = 8;
-switch (dayOfWeek) {
-  case 1:
-  case 2:
-  case 3:
-  case 4:
-  case 5:
-    console.log("Workday");
-    break;
-  case 6:
-  case 7:
-    console.log("Weekend");
-    break;
-  default:
-    console.log("invalid");
-    break;
+// For Loop
+for (let x = 0; x < 10; x++) {
+  console.log(x);
 }
+
+// While Loop
+let x = 0;
+while (x < 10) {
+  console.log(x);
+  x++;
+}
+
+// Do While loop
+let x = 0;
+do {
+  console.log(x);
+  x++;
+} while (x < 10);
