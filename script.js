@@ -1,7 +1,6 @@
-// JavaScript: Loops - For Loop
+// ES6 - Spread syntax (...)
 
-// forEach loop
-const students = [
+const students_01 = [
   {
     name: "Veda",
     age: 25,
@@ -33,12 +32,13 @@ const students = [
     isPresent: false,
   },
 ];
-/* 
-const newArr = students.map((student) => {
-    return student.isPresent;
-}) */
+const students_02 = [
+  {
+    name: "Murari",
+    age: 36,
+    isPresent: true,
+  },
+];
 
-// const newArr = students.filter((student) => student.isPresent === false);
-const newArr = students.map((student) => student.name);
-
-console.log(newArr);
+const family = [...students_01, ...students_02];
+console.log(family);
