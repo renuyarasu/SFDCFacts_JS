@@ -1,19 +1,39 @@
 // JavaScript: Loops - For Loop
 
-// of keyword using Object
-const student = {
-    name: "VedaGna",
+// forEach loop
+const students = [
+  {
+    name: "Veda",
+    age: 25,
+    isPresent: true,
+  },
+  {
+    name: "Gnapika",
     age: 22,
-    fee: undefined,
-    dateAbsent: [25, 26, 27],
-    address: {
-      street: "HMT Hills",
-      pincode: 500072,
-      city: "Hyderabd",
-    },
-  };
-  
-  for (let prop in student) {
-    console.log(`$(prop): ${student[prop]}`);
-  }
-  
+    isPresent: false,
+  },
+  {
+    name: "Hindu",
+    age: 26,
+    isPresent: true,
+  },
+  {
+    name: "Renu",
+    age: 35,
+    isPresent: false,
+  },
+  {
+    name: "Yarasu",
+    age: 25,
+    isPresent: true,
+  },
+  {
+    name: "Sai",
+    age: 19,
+    isPresent: false,
+  },
+];
+
+students.forEach(function (student) {
+  console.log(student.name);
+});
