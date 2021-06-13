@@ -1,20 +1,11 @@
-// ES6 - Spread syntax (...)
+// JSON functions
+// JSON Object
 
 const person = {
-  name: "Veda",
-  age: 25,
-  isPresent: true,
+  name: "VedaGna",
+  age: 5,
 };
+console.log(JSON.stringify(person));
 
-const person_fee = {
-  fee: undefined,
-};
-
-const family = { ...person, ...person_fee };
-console.log(family); // combining key in both objects
-
-// Destructuring
-const {name, isPresent} = family;
-console.log(name);
-console.log(isPresent);
-// filter name & isPresent
+const personString = "{'name': 'VedaGna', 'age': 5}";
+console.log(typeof personString); // String
