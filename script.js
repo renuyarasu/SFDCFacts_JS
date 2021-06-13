@@ -1,20 +1,8 @@
 // JavaScript: Loops
 
 // For Loop
-for (let x = 0; x < 10; x++) {
-  console.log(x);
+const family = ["Chinnu", "Gnapika", "Veda", "Renu", "Yarasu"];
+for (let x = 0; x < family.length; x++) {
+  console.log(family[x]);
+  if (x === 3) break; //break statement
 }
-
-// While Loop
-let x = 0;
-while (x < 10) {
-  console.log(x);
-  x++;
-}
-
-// Do While loop
-let x = 0;
-do {
-  console.log(x);
-  x++;
-} while (x < 10);
