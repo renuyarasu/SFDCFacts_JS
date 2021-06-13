@@ -39,6 +39,12 @@ const students_02 = [
     isPresent: true,
   },
 ];
-
 const family = [...students_01, ...students_02];
-console.log(family);
+// console.log(family); // combining both arrays
+
+// Destructuring
+const [V, G, H] = family;
+console.log(V);
+console.log(G);
+console.log(H);
+// filter first 3 objects
