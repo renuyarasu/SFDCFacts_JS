@@ -1,6 +1,7 @@
 // JavaScript: Working with DOM
 
-const container = document.querySelector(".container");
-container.classList.add("text"); // Add class
-container.classList.remove("container"); // Remove class
-console.log(container.classList);
+const submitBTN = (e) => {
+  e.preventDefault();
+  const btn = e.target;
+  btn.innerText = 'Clicked !'
+};
