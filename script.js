@@ -1,6 +1,7 @@
 // JavaScript: Working with DOM
 
 // getElementsBy
-const tag_name = document.getElementsByTagName('input') // target classes from document
-console.log(tag_name);
-
+// const querySelector = document.querySelector("#email"); // target Id from document
+// const querySelector = document.querySelector(".form-control"); // target first class element from document
+const querySelector = document.querySelectorAll(".form-control"); // target Id from document
+console.log(querySelector);
