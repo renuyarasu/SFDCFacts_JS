@@ -1,7 +1,7 @@
 // JavaScript: Working with DOM
 
-const submitBTN = (e) => {
+document.addEventListener("click", (e) => {
   e.preventDefault();
-  const btn = e.target;
-  btn.innerText = 'Clicked !'
-};
+    const btn = e.target;
+    btn.innerText = "Clicked !";
+});
