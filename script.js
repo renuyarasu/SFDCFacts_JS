@@ -1,6 +1,6 @@
 // JavaScript: Working with DOM
 
 // getElementsBy
-const id = document.getElementById('email') // for IDs from document
-console.log(id);
+const class_name = document.getElementsByClassName('form-control') // target classes from document
+console.log(class_name);
 
