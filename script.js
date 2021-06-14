@@ -1,6 +1,6 @@
 // JavaScript: Working with DOM
 
 // getElementsBy
-const class_name = document.getElementsByClassName('form-control') // target classes from document
-console.log(class_name);
+const tag_name = document.getElementsByTagName('input') // target classes from document
+console.log(tag_name);
 
