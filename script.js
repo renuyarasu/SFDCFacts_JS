@@ -1,7 +1,21 @@
-// JavaScript: MDN - Destructuring
+// JavaScript: MDN - Array: Destructuring
 
-const x = [1, 2, 3, 4, 5];
-const [y, z] = x;
+const foo = [1, 2, 3];
 
-console.log(y); //1
-console.log(z); //2
+const [red, green, yellow] = foo;
+console.log(red); // 1
+console.log(green); // 2
+console.log(yellow); // 3
+
+// Swapping Variables
+let a = 5;
+let b = 10;
+[a, b] = [b, a];
+console.log(a);
+console.log(b);
+
+const myArr = [1,2,3];
+[myArr[2], myArr[1]] = [myArr[1], myArr[2]];
+console.log(myArr); //[ 1, 3, 2 ]
+
+
