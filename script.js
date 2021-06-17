@@ -1,14 +1,18 @@
-// JavaScript: MDN - Array: Destructuring
-console.clear();
-// Object destructuring
+// JavaScript: MDN - Destructuring
+// Unpacking fields from objects passed as a function parameter
 const user = {
-  id: 42,
-  is_verified: true,
+  id: 50,
+  displayname: "Veda",
+  fullname: {
+    firstname: "VedaGna",
+    lastname: "Yarasu",
+  },
 };
-const { id, is_verified } = user;
-console.log(is_verified);
-
-
-const {a = 10, b=20} = {a:100}
-console.log(a); // 3
-console.log(b); // 5
+function userId({ id }) {
+  return id;
+}
+function whois({ displayname, fullname: { firstname: name } }) {
+  return `${displayname} is ${name}`;
+}
+console.log(userId(user));
+console.log(whois(user));
