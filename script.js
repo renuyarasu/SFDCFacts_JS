@@ -1,7 +1,8 @@
-// JavaScript: Working with DOM
+// JavaScript: MDN - Destructuring
 
-document.addEventListener("click", (e) => {
-  e.preventDefault();
-    const btn = e.target;
-    btn.innerText = "Clicked !";
-});
+let a, b, rest;
+[a, b] = [1, 2];
+console.log(a); //1
+console.log(b); //2
+[a, b, ...rest] = [1, 2, 3, 4, 5, 6];
+console.log(rest);
