@@ -1,18 +1,28 @@
 // JavaScript: MDN - Destructuring
-// Unpacking fields from objects passed as a function parameter
-const user = {
-  id: 50,
-  displayname: "Veda",
-  fullname: {
-    firstname: "VedaGna",
-    lastname: "Yarasu",
+// For of iteration and destructuring
+const people = [
+  {
+    name: "VedaGna",
+    family: {
+      father: "Renu",
+      mother: "Hindu",
+      sister: "Gnapika",
+    },
+    age: 4
   },
-};
-function userId({ id }) {
-  return id;
+  {
+    name: "Renu",
+    family: {
+      father: "Subbarao",
+      mother: "Venkateswaramma",
+      sister: "Tejaswi",
+    },
+    age: 35
+  },
+];
+
+for( const {name:n, family: {father: f}} of people){
+  console.log('Name: ' + n + ', Father: '+ f);
 }
-function whois({ displayname, fullname: { firstname: name } }) {
-  return `${displayname} is ${name}`;
-}
-console.log(userId(user));
-console.log(whois(user));
+// Name: VedaGna, Father: Renu
+// Name: Renu, Father: Subbarao
