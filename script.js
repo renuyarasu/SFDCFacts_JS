@@ -1,9 +1,11 @@
-// JavaScript: MDN - Destructuring
-const square_01 = (a) => {
-    return a * a;
-};
-const square_02 = (a) => a * a;
-const square_03 = (a) => a * a;
+// JavaScript: Object Literals
+const mystery = 'test';
+const obj = {
+    p1: 10,
+    p2: 20,
+    f1() { },
+    f2: () => { },
+    [mystery]: 42,
+}
 
-
-console.log([1, 2, 3, 4, 5].map(a => a * a));
+console.log(obj.mystery); // undefined
